@@ -388,6 +388,9 @@ mdf_err_t mesh_mqtt_start(char *url)
     esp_mqtt_client_config_t mqtt_cfg = {
         .uri = url,
         .event_handle = mqtt_event_handler,
+        .username="helloworld",
+        .password="Ethan1984$",
+        .port=11941,
         // .client_cert_pem = (const char *)client_cert_pem_start,
         // .client_key_pem = (const char *)client_key_pem_start,
     };
